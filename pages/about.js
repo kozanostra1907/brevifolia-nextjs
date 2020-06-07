@@ -1,16 +1,26 @@
 import Layout from '../components/Layout'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
+import Head from 'next/head'
 
 export default function Info({ frontmatter, markdownBody, title }) {
   return (
     <Layout
-      pathname="info"
+      pathname="portfolio"
       bgColor={frontmatter.background_color}
       siteTitle={title}
     >
+ <Head>
+      <title>portfolio</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
+    </Head>
+      
+     
       <section className="info_blurb">
-        <ReactMarkdown source={markdownBody} />
+       
+
+        <p>im....</p>
       </section>
       <style jsx>{`
         .info_blurb {
@@ -31,11 +41,13 @@ export default function Info({ frontmatter, markdownBody, title }) {
         }
       `}</style>
     </Layout>
+
+    
   )
 }
 
 export async function getStaticProps() {
-  const content = await import(`../data/info.md`)
+  const content = await import(`../data/portfolio.md`)
   const config = await import(`../data/config.json`)
   const data = matter(content.default)
 

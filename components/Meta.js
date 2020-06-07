@@ -61,8 +61,13 @@ export default function Meta(props) {
                     ul, ol, p {
                     margin-bottom: 1.45rem;
                     }
+                   
+
                     img {
-                    max-width: 100%;
+                    width: 100%;
+                    height:auto;
+                    
+                    
                     }
                     img, figure, table, fieldset  {
                     margin-left: 0;
@@ -220,6 +225,12 @@ export default function Meta(props) {
                         p {
                             line-height: 1.4375;
                         }
+                    }
+                    #logo {
+                        max-width: 200px;
+                    }
+                    #logo:hover {
+                        cursor: pointer;
                     }
                 `}
             </style>

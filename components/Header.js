@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+
 export default function Header(props) {
   return (
     <header className="header">
@@ -8,26 +9,49 @@ export default function Header(props) {
         role="navigation"
         aria-label="main navigation"
       >
+
+        
+<div>
         <Link href="/">
-          <h1>{props.siteTitle}</h1>
+
+        <img src="../static/icons/kozanostra.png" id="logo" />
         </Link>
-        <div>
-          <Link href={`${typeof window !== "undefined" &&
-          window.location.pathname == "/info" ?
-          "/" : "/info"}`}>
-            <h1>{`${typeof window !== "undefined" &&
-          window.location.pathname == "/info" ?
-          "close" : "info"}`}</h1>
+
+        <Link href={`${typeof window !== "undefined" &&
+          window.location.pathname == "/portfolio" ?
+          "/portfolio" : "/portfolio"}`}>
+            <h1>portfolio</h1>
           </Link>
-        </div>
+
+        <Link href={`${typeof window !== "undefined" &&
+          window.location.pathname == "/blog" ?
+          "/blog" : "/blog"}`}>
+            <h1>blog</h1>
+          </Link>
+
+          <Link href={`${typeof window !== "undefined" &&
+          window.location.pathname == "/about" ?
+          "/about" : "/about"}`}>
+            <h1>about me</h1>
+          </Link>
+        
+        
+          </div>
+
+        
+       
       </nav>
       <style jsx>
         {`
           h1 {
             margin-bottom: 0;
+            font-weight:900;
+            font-size:18px;
           }
           h1:hover {
             cursor: pointer;
+            font-color:#e6000;
+            
           }
           nav {
             padding: 1.5rem 1.25rem;
