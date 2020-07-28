@@ -1,6 +1,7 @@
 import matter from 'gray-matter'
 import Layout from '../components/Layout'
 import BlogList from '../components/BlogList'
+import Head from 'next/head'
 
 const Index = props => {
   return (
@@ -9,6 +10,9 @@ const Index = props => {
       siteTitle={props.title}
       siteDescription={props.description}
     >
+      <Head>
+      <link rel="icon" type="image/x-icon" href="../static/favicon.ico" />
+      </Head>
       <section>
         <BlogList allBlogs={props.allBlogs} />
       </section>
@@ -17,7 +21,6 @@ const Index = props => {
 }
 
 export default Index
-
 export async function getStaticProps() {
   const siteConfig = await import(`../data/config.json`)
   //get posts & context from folder

@@ -6,6 +6,7 @@ const glob = require('glob')
 import Layout from '../../components/Layout'
 
 export default function BlogTemplate({ frontmatter, markdownBody, siteTitle }) {
+  
   function reformatDate(fullDate) {
     const date = new Date(fullDate)
     return date.toDateString().slice(4)
@@ -190,6 +191,7 @@ export async function getStaticProps({ ...ctx }) {
 export async function getStaticPaths() {
   //get all .md files in the posts dir
   const blogs = glob.sync('posts/**/*.md')
+  
 
   //remove path and extension to leave filename only
   const blogSlugs = blogs.map(file =>
@@ -207,3 +209,4 @@ export async function getStaticPaths() {
     fallback: false,
   }
 }
+

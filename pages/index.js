@@ -14,6 +14,7 @@ export default function Info({ frontmatter, markdownBody, title }) {
       <title>portfolio</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
+      <link rel="icon" type="image/x-icon" href="../static/favicon.ico" />
     </Head>
       
      
@@ -22,29 +23,13 @@ export default function Info({ frontmatter, markdownBody, title }) {
 
         <p>Thats my Home</p>
       </section>
-      <style jsx>{`
-        .info_blurb {
-          max-width: 800px;
-          padding: 1.5rem 1.25rem;
-        }
-
-        @media (min-width: 768px) {
-          .info_blurb {
-            padding: 2rem;
-          }
-        }
-
-        @media (min-width: 1440px) {
-          .info_blurb {
-            padding: 3rem;
-          }
-        }
-      `}</style>
+     
     </Layout>
 
     
   )
 }
+
 
 export async function getStaticProps() {
   const content = await import(`../data/portfolio.md`)
