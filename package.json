@@ -30,6 +30,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/kendallstrautman/brevifolia-nextjs"
-  }
+    "url": "git+https://github.com/kendallstrautman/brevifolia-nextjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kendallstrautman/brevifolia-nextjs/issues"
+  },
+  "homepage": "https://github.com/kendallstrautman/brevifolia-nextjs#readme",
+  "main": "next.config.js"
 }
