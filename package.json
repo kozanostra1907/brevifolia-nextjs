@@ -12,15 +12,16 @@
     "start": "next start"
   },
   "dependencies": {
-    "bootstrap": "^4.5.0",
+    "bootstrap": "^4.5.3",
     "gray-matter": "^4.0.2",
-    "next": "^9.4.4",
+    "next": "^9.5.5",
     "node-glob": "^1.2.0",
-    "raw-loader": "^4.0.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "raw-loader": "^4.0.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-markdown": "^4.3.1",
-    "webpack": "^4.42.1"
+    "webpack": "^4.44.2",
+    "yarn": "^1.22.10"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
