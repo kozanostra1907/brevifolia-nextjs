@@ -39,6 +39,9 @@ export default function Info({ frontmatter, markdownBody, title }) {
                     <img src="../static/paris/Paris-Roadtrip-Kozanostra_5.jpg" alt="Tunnel"/>
                 </a>
             </div>
+            </div>
+
+            <div class="row">
             <div class="col-sm-6 col-md-4">
                 <a class="lightbox" >
                     <img src="../static/paris/Paris-Roadtrip-Kozanostra_4.jpg" alt="Traffic"/>
@@ -54,7 +57,9 @@ export default function Info({ frontmatter, markdownBody, title }) {
                     <img src="../static/paris/Paris-Roadtrip-Kozanostra_8.jpg" alt="Rails"/>
                 </a>
             </div>
+            </div>
 
+            <div class="row"></div>
             <div class="col-sm-6 col-md-4">
                 <a class="lightbox" >
                     <img src="../static/paris/Paris-Roadtrip-Kozanostra_9.jpg" alt="Rails"/>
@@ -71,6 +76,7 @@ export default function Info({ frontmatter, markdownBody, title }) {
                 <a class="test" >
                     <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/coast.jpg" alt="Rails"/>
                 </a>
+            </div>
             </div>
 
            
