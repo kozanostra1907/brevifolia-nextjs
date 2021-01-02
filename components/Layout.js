@@ -175,6 +175,8 @@ export default function Layout(props) {
           content: '';
           transition: 0.4s;
       }
+
+      
       
       .tz-gallery .lightbox:hover:after,
       .tz-gallery .lightbox:hover:before {

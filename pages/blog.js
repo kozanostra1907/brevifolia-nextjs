@@ -49,7 +49,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      allBlogs: posts,
+      allBlogs: posts, 
       title: siteConfig.default.title,
       description: siteConfig.default.description,
     },
