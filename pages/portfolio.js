@@ -19,7 +19,7 @@ export default function Info({ frontmatter, markdownBody, title }) {
  
     
     </Head>
-    <section class="test">
+    
    
 
         <div class="row">
@@ -77,7 +77,7 @@ export default function Info({ frontmatter, markdownBody, title }) {
     </div>
 
 
-      </section>
+    
 
       
     

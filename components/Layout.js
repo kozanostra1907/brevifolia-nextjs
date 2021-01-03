@@ -118,7 +118,7 @@ export default function Layout(props) {
       .gallery-container h1 {
           text-align: center;
           margin-top: 50px;
-          font-family: 'Droid Sans', sans-serif;
+          font-family: ;
           font-weight: bold;
       }
       

@@ -172,6 +172,7 @@ export default function Meta(props) {
                     h1,
                     h2 {
                     font-weight: 500;
+                    
                     }
 
                     h1 {
